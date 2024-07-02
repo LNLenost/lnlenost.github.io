@@ -1,6 +1,6 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
+  "name": "lnlenost's-website",
+  "version": "1.0.0",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/LNLenost/lnlenost.github.io"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "LNLenost",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/LNLenost/lnlenost.github.io/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://github.com/LNLenost/lnlenost.github.io/#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
