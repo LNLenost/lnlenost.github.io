@@ -35,6 +35,9 @@ jobs:
       - name: Install SASS
         run: npm install -g sass
       
+      - name: Migrate scss or whatever that shit is
+        run: sass-migrator module src/styles.scss
+      
       - name: Compile SCSS
         run: sass src/styles.scss dist/styles.css
  
