@@ -32,6 +32,9 @@ jobs:
       - name: Build project
         run: npm run build
         
+      - name: Install SASS
+        run: npm install -g sass
+      
       - name: Compile SCSS
         run: sass src/styles.scss dist/styles.css
  
