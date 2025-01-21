@@ -32,7 +32,10 @@ jobs:
       - name: Build project
         run: npm run build
         
-      # Push to Github Pages
+      - name: Compile SCSS
+        run: sass src/styles.scss dist/styles.css
+ 
+       # Push to Github Pages
       - name: Github Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
