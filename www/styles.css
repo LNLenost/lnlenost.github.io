@@ -4,6 +4,7 @@ body {
     background-image: url('assets/favicon.png');
     background-size: auto;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #2596be;
     transition: background 0.3s, color 0.3s;
     font-family: rodin, sans-serif;
