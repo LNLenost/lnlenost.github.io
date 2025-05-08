@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetPass - 3DS Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon_netpass.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/netpasslogo.png" alt="NetPass' logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./">Go Back</a></li>
+        </ul>
+    </nav>
+    <section id="login">
+        <h2>Login with Nintendo 3DS</h2>
+        <div class="qr-container">
+            <img id="login_qr_code" alt="Qr code for login" />
+            </div>
+        <p>Scan the QR code with your 3ds to log in.</p>
+        <ol>
+            <li>Launch NetPass</li>
+            <li>Navigate to Settings --> Scan QR Code</li>
+            <li>Scan the above displayed code</li>
+            <li>Confirm the verification</li>
+        </ol>
+    </section>
+<script type="application/javascript">
+let fragment = window.location.hash.substring(1);
+let query = new URLSearchParams(fragment);
+document.getElementById("login_qr_code").src = query.get("qr_url");
+let check_url = query.get("check_url");
+
+function check(url) {
+	let xmlHttp = new XMLHttpRequest();
+	xmlHttp.withCredentials = true;
+	xmlHttp.onreadystatechange = () => {
+		if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+			let data = JSON.parse(xmlHttp.responseText);
+			if (data.success) {
+				location.replace(data.redirect_url);
+			} else {
+				setTimeout(() => {
+					check(url);
+				}, 1000);
+			}
+		}
+	};
+	xmlHttp.open("GET", url, true);
+	xmlHttp.send(null);
+}
+check(check_url);
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetPass - Privacy Policy </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon_netpass.png" type="image/png">
+    <script type="application/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/netpasslogo.png" alt="NetPass' logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./">Go back</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>NetPass Privacy Policy</h2>
+<p>We take the privacy of our users seriously. As such, we collect the <b>minimum amount of data</b> required to operate our service. Below you can read about which data is stored, why and for how long.</p>
+</section>
+<section>
+<h2>Cookies</h2>
+<p>The following cookies are used while using our website:</p>
+
+<p><strong>Identification Cookie:</strong><br>
+This Cookie is used to identify the user between page loads, so that the server knows who you are while you access and edit your profile. This is a short-lived session cookie.</p>
+
+<p><strong>Auth Cookies:</strong><br>
+These cookies are cookies that are used during authentification to prevent an attacker to gain control of your identity. These are short-lived session cookies.</p>
+</section>
+<section>
+<h2>Data</h2>
+<p>We collect various bits of data to make the service work:</p>
+
+<p><strong>Identifying bits:</strong><br>
+To identify the console connecting to NetPass, we store the consoles mac address together with a console-unique hash consisting out of the <a href="https://www.3dbrew.org/wiki/AM:GetDeviceId">device id</a> and the mac. While the mac is stored in plain text, it does not seem feasable to do otherwise, as throughout the StreetPass protocol the mac address of a user apears in the transmitted payloads frequently.<br>
+For background collection of passes to work, we also store the BOSS UID, as that is needed to identify the console when doing StreetPass-Relay requests. These identifying bits are stored indefinitely.<br>
+For some integrations to work, we additionally store your friends code. This friends code is not shared with third-party services; you will have to supply your friends code to the other service somehow, if it needs that.</p>
+
+<p><strong>Outbox:</strong><br>
+The outbox contains all the messages that your console is trying to send to others via NetPass. These messages, together with a list of which titles are activated, and the capacity of messages on the console itself all make up the outbox data. This data is stored for up to 30 days.</p>
+
+<p><strong>Inbox:</strong><br>
+Similar to the outbox, the inbox contains all that the messages that your console will receive upon opening NetPass. These messages are stored for up to 15 days.</p>
+
+<p><strong>Back Alley:</strong><br>
+When you used the Back Alley to get a specific pass, the time of when this is happening is stored on the server. This is to prevent cheating by using the back alley more frequently than intended. These time entries are stored for up to 3 days.</p>
+
+<p><strong>Bans:</strong><br>
+When you are issued a ban, the reason for the ban and the time when it expires is stored indefinitely. This is to be able to enforce the ban and to be able to provide moderators a history of when and why a ban occured, to be able to detect repeat offenses.</p>
+
+<p><strong>Integrations:</strong><br>
+For integrations to function, the HTTP headers that the console sends on StreetPass-Relay requests are stored, so that those can then be sent off to the integration. This data is stored indefinitely.<br>
+Additionally, Which integration is active and when it has to run again is also stored, for them to be able to function. This data is only stored while an integration is active, and for the duration the integration is active.</p>
+
+<p><strong>Reports:</strong><br>
+When a message is reported, the report reason along with the messages associated with the report are stored on the server, for moderators to be able to take action, if needed. This data is stored indefinitely.</p>
+
+<p><strong>Account:</strong><br>
+When using an account on our website, we store the data you submitted there: Your account name, the consoles you connected, the name of your consoles and the settings for them. This data is stored indefinitely.</p>
+
+<p><strong>Subscriptions:</strong><br>
+Our subscriptions are being processed by <a href="https://stripe.com">Stripe</a>. To be able to associate a subscription to a user, we store the stripe customer id, price id, subscription id and expiracy of a subscription. This data is stored for the duration of the subscription.</p>
+
+<p><strong>Third-Party identifiers:</strong><br>
+If you configure a third-party identifier for your account (e.g. Login with Discord) we store the user id of the third-party provider. This data is stored indefinitely.</p>
+
+<p><strong>Aggregated data:</strong><br>
+We store some aggregated data for research of the StreetPass protocol and to be able to provide some services. This aggregated data is stored indefinitely, however, it is not able to draw conclusions to specific consoles from this. This aggregated data includes: Research of interesting StreetPass message values; names of StreetPass titles; hmac of StreetPass titles.</p>
+</section>
+<section>
+<h2>Data Sharing</h2>
+<p><strong>Subscriptions</strong><br>
+We use <a href="https://stripe.com">Stripe</a> as our payment processor. For this to work, stripe will know what subscription you subscribed to. Stripe does <em>not</em> know your internal user id or any other bits that link your subscription to your NetPass account. This all happens on the NetPass side.
+While Stripe may ask for your card details, name or email, NetPass never receives that information.</p>
+<p><strong>Third-Party identifiers:</strong><br>
+If you decide to identify yourself with a third-party service, the service will know that you tried to identify with it. The service will never receive any data from NetPass itself, meaning we do not give any data to them</p>
+<p><strong>Integrations:</strong><br>
+For integrations to work, the StreetPass-Relay HTTP headers your console uploaded are being transfered to the third-party service. This includes your consoles BOSS UID.</p>
+</section>
+<section>
+<h2>Contact</h2>
+<p>If you have any questions or want further clarification about our privacy policy, please reach out to <a href="https://netpass.cafe/discord">our Discord</a> or <a href="mailto:netpass@sorunome.de">via email</a>.</p>
+</p>
+</section>
+</main>
+    <footer>
+        <p>&copy; 2024-2025 NetPass, by <a href="https://sorunome.de">Sorunome</a></p>Site by <a href="https://github.com/LNLenost">LNLenost</a> ,  <a href="https://github.com/iveurne">iveurne</a>  &  <a href="https://github.com/Gatokun">Gato-kun</a></p>
+            <a href="https://gitlab.com/3ds-NetPass/NetPass-Website">Website Source Code</a> , <a href="privacy.html">Privacy Policy</a>
+            
+    </footer>
+</body>
+    </html>

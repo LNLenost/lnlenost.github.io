@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetPass - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon_netpass.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/netpasslogo.png" alt="NetPass' logo">
+        </div>
+    </header>
+        <nav>
+        <ul>
+            <li><a href="./">Go Back</a></li>
+        </ul>
+    </nav>
+    <section id="login">
+        <h2>Login</h2>
+        <p>Chose a method to log in with</p>
+        <ul id="login_methods"></ul>
+    </section>
+<script type="application/javascript">
+
+function escapeHtml(s) {
+	return s.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&#39;");
+}
+let xmlHttp = new XMLHttpRequest();
+xmlHttp.onreadystatechange = () => {
+	if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+		const data = JSON.parse(xmlHttp.responseText);
+		let html = "";
+		for (const method of data.methods) {
+			html += `<li><a href="${escapeHtml(method.url)}">Login with ${escapeHtml(method.name)}</a></li>`;
+		}
+		document.getElementById("login_methods").innerHTML = html;
+	}
+};
+xmlHttp.open("GET", "https://api.netpass.cafe/auth/methods/login", true);
+xmlHttp.send(null);
+</script>
+</body>
+</html>
