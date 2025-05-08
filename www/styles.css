@@ -34,7 +34,7 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #24F1FC;
+    background-color: #058CA7;
     font-size: 1.2em; 
     font-family: seurat, sans-serif;
     display: flex;
@@ -120,7 +120,7 @@ footer {
     text-align: center;
     padding: 10px;
     bottom: 10px;
-    background-color: #24F1FC;
+    background-color: #058CA7;
     color: white;
 }
 
