@@ -1,6 +1,6 @@
-# NetPass' official website!
-This repository contains the source code of NetPass' website, available [here!](https://netpass.cafe)
+# My website!
+This repository contains the source code of my website, available [here!](https://lnlenost.github.io)
 
-You can find the dev builds [here](https://lnlenost.github.io/NetPassWebsite)...  but they are highly unstable, so I reccomend sticking onto the prod build!
-
-Check out our Privacy Policy [here](https://lnlenost.github.io/NetPassWebsite/www/privacy.html)
+# Disclaimer
+You may note that my website looks a little similar to... NetPass?
+Yes, my webdite is based of NetPass's website that I personallt made! So there is no stolen content. Also, check out NetPass [here.](https://netpass.cafe)
