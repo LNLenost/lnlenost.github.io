@@ -4,7 +4,7 @@ body {
     background-image: url('assets/bg-pattern.png');
     background-size: contain;
     background-attachment: fixed;
-    color: #20834C;
+    color: #2596be;
     transition: background 0.3s, color 0.3s;
     font-family: rodin, sans-serif;
 }
@@ -34,7 +34,7 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #38AAB0;
+    background-color: #2596be;
     font-size: 1.2em; 
     font-family: seurat, sans-serif;
     display: flex;
@@ -63,7 +63,7 @@ main {
 
 section {
     padding: 20px;
-    background: #37B381;
+    background: #2596be;
     background: linear-gradient( #ffffff, #e2f8ec);
     margin-bottom: 40px;
     font-family: rodin, sans-serif;
@@ -112,7 +112,7 @@ h2 {
     width: 240px;
     height: auto;
     border-radius: 15px;
-    border: 4px solid #38AAB0;
+    border: 4px solid #2596be;
     max-width: 100%;
 }
 
@@ -120,7 +120,7 @@ footer {
     text-align: center;
     padding: 10px;
     bottom: 10px;
-    background-color: #37B381;
+    background-color: #2596be;
     color: white;
 }
 
@@ -130,7 +130,7 @@ footer a {
 }
 
 a {
-    color: #38AAB0;
+    color: #2596be;
     font-weight: bold;
 }
 
@@ -144,7 +144,7 @@ section {
     width: 85%;
     margin: 0 auto;
     padding: 20px;
-    background: #37B381;
+    background: #2596be;
     background: linear-gradient( #ffffff, #e2f8ec);
     border-radius: 20px;
     margin-bottom: 20px;
@@ -162,7 +162,7 @@ hr.rounded {
     width: 85%;
     margin: 0 auto;
     padding: 20px;
-    background: #37B381;
+    background: #2596be;
     background: linear-gradient( #ffffff, #e2f8ec);
     border-radius: 20px;
     margin-bottom: 20px;
