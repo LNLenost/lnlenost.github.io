@@ -3,120 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informativa sulla Privacy - TrovaSconti Bot</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Termini di Servizio - Amazon Scraper Bot</title>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FF9900;
+            border-bottom: 3px solid #FF9900;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #232F3E;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #666;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #FF9900;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-left: 4px solid #dc3545;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info {
+            background-color: #d1ecf1;
+            padding: 15px;
+            border-left: 4px solid #17a2b8;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .update-date {
+            color: #666;
+            font-style: italic;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .license-box {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 20px 0;
         }
     </style>
 </head>
-<body class="min-h-screen bg-gray-100 flex items-center justify-center py-8 px-4 antialiased">
-    <div class="container mx-auto p-6 md:p-10 lg:p-12 bg-white rounded-lg shadow-xl max-w-4xl w-full">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">
-            Informativa sulla Privacy del Bot Discord "TrovaSconti"
-        </h1>
-        <p class="text-gray-500 text-sm text-center mb-8">
-            Ultimo aggiornamento: 26 Giugno 2025
-        </p>
-
-        <p class="text-gray-700 leading-relaxed mb-6">
-            La tua privacy è importante per noi. Questa Informativa sulla Privacy descrive quali informazioni il bot Discord "TrovaSconti" raccoglie, come le utilizza e come le protegge.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            1. Informazioni Raccolte
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-4">
-            Il bot "TrovaSconti" raccoglie le seguenti informazioni per poter fornire il suo servizio:
-        </p>
-        <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-6 space-y-2 pl-4">
-            <li>
-                <strong class="font-bold">ID Utente Discord (User ID):</strong> Viene raccolto il tuo ID Discord quando interagisci con il bot (es. quando tracci un prodotto). Questo ID è necessario per inviarti notifiche private e gestire i prodotti che stai monitorando.
-            </li>
-            <li>
-                <strong class="font-bold">ASIN dei Prodotti Tracciati:</strong> Il codice identificativo (ASIN) dei prodotti Amazon che decidi di tracciare viene memorizzato per poter monitorare i loro prezzi.
-            </li>
-            <li>
-                <strong class="font-bold">Prezzo Desiderato (Opzionale):</strong> Se specifichi un prezzo desiderato per un prodotto, questo dato viene memorizzato.
-            </li>
-            <li>
-                <strong class="font-bold">Dati del Prodotto:</strong> Il bot memorizza informazioni sui prodotti monitorati (es. titolo, prezzo, URL immagine, categoria, caratteristiche, storico prezzi, stato Prime, valutazione, numero di recensioni) per fornire il servizio e lo storico dei prezzi. Questi dati sono pubblici e disponibili su Amazon.
-            </li>
-            <li>
-                <strong class="font-bold">Piattaforma:</strong> Viene registrata la piattaforma da cui l'utente sta tracciando un prodotto (es. 'discord' o 'telegram') per gestire correttamente le notifiche.
-            </li>
-        </ul>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            2. Come Utilizziamo le Informazioni
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-4">
-            Le informazioni raccolte vengono utilizzate esclusivamente per i seguenti scopi:
-        </p>
-        <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-6 space-y-2 pl-4">
-            <li>
-                <strong class="font-bold">Fornire il Servizio:</strong> Per tracciare i prezzi dei prodotti Amazon e inviarti notifiche quando un prezzo scende o raggiunge il tuo obiettivo desiderato.
-            </li>
-            <li>
-                <strong class="font-bold">Migliorare il Servizio:</strong> I dati aggregati e anonimizzati (senza identificare il singolo utente) potrebbero essere utilizzati per analizzare le tendenze di utilizzo e migliorare le funzionalità del bot.
-            </li>
-            <li>
-                <strong class="font-bold">Generazione di Descrizioni AI:</strong> Per alcune notifiche, il titolo e le caratteristiche del prodotto possono essere inviati a un servizio di intelligenza artificiale esterno (OpenRouter) per generare una descrizione accattivante. Nessun dato personale dell'utente viene inviato a questi servizi.
-            </li>
-        </ul>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            3. Condivisione delle Informazioni
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-4">
-            Non condividiamo le tue informazioni personali (come il tuo ID Discord o i prodotti specifici che tracci) con terze parti, ad eccezione di quanto strettamente necessario per il funzionamento del bot:
-        </p>
-        <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-6 space-y-2 pl-4">
-            <li>
-                <strong class="font-bold">Database Interno:</strong> Le informazioni sono memorizzate in un database SQLite locale all'applicazione del bot.
-            </li>
-            <li>
-                <strong class="font-bold">Servizi Esterni:</strong> Solo le informazioni relative ai prodotti (ASIN, titolo, prezzo, immagine, categoria, dominio, caratteristiche, etc.) possono essere inviate ai webhook di Discord o alle API di Telegram per l'invio delle notifiche. I dati dei prodotti possono anche essere inviati all'API di OpenRouter per la generazione di descrizioni AI.
-            </li>
-        </ul>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            4. Sicurezza dei Dati
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-            Adottiamo misure ragionevoli per proteggere le informazioni raccolte dal bot. Tuttavia, nessun sistema di trasmissione o archiviazione dati è sicuro al 100%. Non possiamo garantire la sicurezza assoluta delle tue informazioni.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            5. Conservazione dei Dati
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-            Conserveremo le informazioni sui prodotti che tracci finché sarai un utente del bot o finché non deciderai di smettere di tracciare un prodotto. I dati sui prodotti monitorati pubblicamente dal bot potrebbero essere conservati per un periodo più lungo per scopi storici e analitici.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            6. I Tuoi Diritti
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-            Hai il diritto di richiedere l'accesso, la correzione o la cancellazione delle informazioni personali che il bot detiene su di te. Puoi farlo utilizzando i comandi del bot (es. <code>/untrack</code> per rimuovere il tracciamento di prodotti) o contattando direttamente gli operatori del bot.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mt-8 mb-4">
-            7. Contatto
-        </h2>
-        <p class="text-gray-700 leading-relaxed mb-6">
-            Per qualsiasi domanda o preoccupazione riguardo a questi termini o all'Informativa sulla Privacy, puoi contattare lo sviluppatore del bot tramite il server Discord o in DM: <code>@lnlenost</code>
-        </p>
-
-        <div class="flex justify-center mt-10">
-            <a href="https://lnlenost.github.io" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
-                ← Indietro
-            </a>
+<body>
+    <div class="container">
+        <h1>ð Termini di Servizio</h1>
+        <div class="update-date">
+            Ultimo aggiornamento: 4 agosto 2025
         </div>
+
+        <div class="highlight">
+            <strong>Accettazione dei Termini:</strong> Utilizzando Amazon Scraper Bot, accetti integralmente questi termini di servizio. Se non accetti questi termini, ti preghiamo di non utilizzare il servizio.
+        </div>
+
+        <h2>1. Descrizione del Servizio</h2>
+        
+        <h3>1.1 FunzionalitÃ  Principali</h3>
+        <p>Amazon Scraper Bot Ã¨ un servizio automatizzato che offre:</p>
+        <ul>
+            <li><strong>Monitoraggio Prezzi:</strong> Tracciamento continuo dei prezzi dei prodotti Amazon</li>
+            <li><strong>Notifiche Multi-Piattaforma:</strong> Invio di avvisi tramite WhatsApp, Discord e Telegram</li>
+            <li><strong>Analisi Trend:</strong> Storico prezzi e identificazione di opportunitÃ  di risparmio</li>
+            <li><strong>Gestione Database:</strong> Archiviazione e gestione delle informazioni sui prodotti</li>
+            <li><strong>Automazione Completa:</strong> Funzionamento 24/7 senza intervento manuale</li>
+        </ul>
+
+        <h2>2. Utilizzo Accettabile</h2>
+        
+        <h3>2.1 Usi Consentiti</h3>
+        <ul>
+            <li>Monitoraggio personale di prodotti per uso domestico</li>
+            <li>Ricerca di opportunitÃ  di risparmio legittime</li>
+            <li>Analisi di trend di mercato per scopi educativi</li>
+
+        <h3>2.2 Usi Vietati</h3>
+        <div class="warning">
+            <strong>Ã SEVERAMENTE VIETATO utilizzare il servizio per:</strong>
+            <ul>
+                <li>AttivitÃ  commerciali o rivendita senza autorizzazione</li>
+                <li>Sovraccarico dei server Amazon con richieste eccessive</li>
+                <li>Violazione dei termini di servizio di Amazon</li>
+                <li>Raccolta massiva di dati per scopi illeciti</li>
+                <li>Spam o invio di notifiche non richieste</li>
+                <li>AttivitÃ  che possano danneggiare il servizio o altri utenti</li>
+            </ul>
+        </div>
+
+        <h2>3. ResponsabilitÃ  e Limitazioni</h2>
+        
+        <h3>3.1 Esclusione di Garanzie</h3>
+        <p>Il servizio Ã¨ fornito <strong>"AS IS"</strong> senza garanzie di alcun tipo, incluse ma non limitate a:</p>
+        <ul>
+            <li>Accuratezza dei prezzi o delle informazioni sui prodotti</li>
+            <li>DisponibilitÃ  continua del servizio</li>
+            <li>CompatibilitÃ  con tutti i dispositivi o sistemi</li>
+            <li>Assenza di errori o interruzioni</li>
+        </ul>
+
+        <h3>3.2 Limitazione di ResponsabilitÃ </h3>
+        <div class="warning">
+            <strong>Importante:</strong> Gli sviluppatori e i contributori del progetto NON sono responsabili per:
+            <ul>
+                <li>Perdite finanziarie derivanti dall'utilizzo del servizio</li>
+                <li>Decisioni di acquisto basate sui dati forniti</li>
+                <li>Interruzioni del servizio o perdita di dati</li>
+                <li>Danni diretti, indiretti, incidentali o consequenziali</li>
+                <li>Violazioni dei termini di servizio di terze parti (Amazon, Discord, etc.)</li>
+            </ul>
+        </div>
+
+        <h2>5. Requisiti Tecnici e Dipendenze</h2>
+        
+        <h3>5.2 Dipendenze Esterne</h3>
+        <p>Il servizio dipende da:</p>
+        <ul>
+            <li><strong>Amazon:</strong> DisponibilitÃ  delle pagine prodotto e struttura HTML</li>
+            <li><strong>Telegram API:</strong> Per l'invio di notifiche Telegram</li>
+            <li><strong>Discord API:</strong> Per l'invio di notifiche Discord</li>
+            <li><strong>WhatsApp Web:</strong> Per l'automazione WhatsApp</li>
+            <li><strong>Librerie Python:</strong> BeautifulSoup, Selenium, Requests, ecc.</li>
+        </ul>
+
+        <h2>6. ProprietÃ  Intellettuale</h2>
+
+        <h3>6.2 Marchi e Copyright</h3>
+        <ul>
+            <li><strong>Amazon:</strong> Tutti i marchi e i contenuti Amazon appartengono ad Amazon.com, Inc.</li>
+            <li><strong>Discord:</strong> Discord Ã¨ un marchio di Discord Inc.</li>
+            <li><strong>Telegram:</strong> Telegram Ã¨ un marchio di Telegram FZ-LLC</li>
+            <li><strong>WhatsApp:</strong> WhatsApp Ã¨ un marchio di Meta Platforms, Inc.</li>
+        </ul>
+
+        <h2>7. DisponibilitÃ  del Servizio</h2>
+        
+        <h3>8.1 Uptime e Manutenzione</h3>
+        <ul>
+            <li>Il servizio funziona 24/7 quando correttamente configurato</li>
+            <li>Possibili interruzioni per manutenzione del codice</li>
+            <li>Dipendenza dalla stabilitÃ  dei servizi esterni (Amazon, API bot)</li>
+            <li>Possibili blocchi temporanei da parte di Amazon</li>
+        </ul>
+
+        <h2>8. Modifiche ai Termini</h2>
+        
+        <h3>8.1 Aggiornamenti</h3>
+        <p>Questi termini possono essere modificati per:</p>
+        <ul>
+            <li>ConformitÃ  a nuove normative</li>
+            <li>Miglioramenti delle funzionalitÃ </li>
+            <li>Correzioni di problemi legali o tecnici</li>
+            <li>Feedback della community</li>
+        </ul>
+
+        <h3>8.2 Notifica delle Modifiche</h3>
+        <ul>
+            <li>Le modifiche significative saranno comunicate tramite i canali di comunicazione del bot</li>
+            <li>Aggiornamento della data di "Ultimo aggiornamento"</li>
+            <li>Continuare l'uso del servizio implica accettazione delle modifiche</li>
+        </ul>
     </div>
 </body>
 </html>
