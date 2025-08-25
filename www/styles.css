@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('assets/bg-pattern.png');
-    background-size: contain;
+    background-size: auto;
     background-attachment: fixed;
+    background-repeat: repeat;
     color: #20834C;
     transition: background 0.3s, color 0.3s;
     font-family: rodin, arial;
@@ -200,6 +201,36 @@ a {
 
 .project-card a:hover {
     color: #1dad77;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.stat-card {
+    background: linear-gradient(#ffffff, #f0f9f4);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #37B381;
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #20834C;
+    font-family: seurat;
+    margin: 0;
+}
+
+.stat-label {
+    color: #2d5a3d;
+    font-size: 0.9em;
+    margin: 5px 0 0 0;
+    font-family: rodin;
 }
 
 section {
