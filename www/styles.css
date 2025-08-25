@@ -2,9 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('assets/bg-pattern.png');
-    background-size: auto;
+    background-size: contain;
     background-attachment: fixed;
-    background-repeat: repeat-y;
     color: #20834C;
     transition: background 0.3s, color 0.3s;
     font-family: rodin, arial;
