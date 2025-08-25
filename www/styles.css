@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('assets/bg-pattern.png');
-    background-size: contain;
+    background-repeat: repeat;
     background-attachment: fixed;
     color: #20834C;
     transition: background 0.3s, color 0.3s;
